@@ -1,0 +1,178 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 112vh;
+    height: 63vh;
+    background: rgba(27, 27, 27,.9);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .inventory {
+    width: 112vh;
+    height: 51vh;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .item_backpack {
+    width: 30vh;
+    height: 48vh;
+    border-radius: 3px;
+    margin-top: 3vh;
+    background: rgba(53, 53, 53, 0.8);
+  }
+  
+  .inventory .slot {
+    width: 6vh;
+    height: 6vh;
+  }
+  
+  .inventory .slot_container {
+    padding-left: 4vh;
+    margin-left: 0vh;
+    height: 40vh;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 7vh);
+    grid-template-rows: repeat(30, 6vh);
+    grid-auto-rows: minmax(6vh, auto);
+    grid-gap: 10px;
+  }
+  
+  .inventory .slot_container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .inventory .slot_container::-webkit-scrollbar-thumb {
+    background-color: #525252;
+  }
+  
+  .inventory .slot_container::-webkit-scrollbar-track {
+    background-color: #474747;
+  }
+  
+  .status {
+    width: 30vh;
+    height: 48vh;
+    border-radius: 3px;
+    margin-top: 3vh;
+    background: rgba(53, 53, 53, 0.8);
+  }
+  
+  .secret_backpack {
+    width: 30vh;
+    height: 48vh;
+    border-radius: 3px;
+    margin-top: 3vh;
+    background: rgba(53, 53, 53, 0.8);
+  }
+  
+  .quickslot {
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: space-around;
+    row-gap: 1px;
+    align-items: center;
+    border-radius: 1px;
+    bottom: 10px;
+  }
+  
+  .quickslot .slot {
+    width: 8vh;
+    height: 8vh;
+  }
+  
+  .quickslot .slot .slot-image {
+    width: 50%;
+    height: 50%;
+    transform: translate(0%,-45%);
+  }
+  
+  .quickslot .slot .slotnumber {
+    color: #acacac;
+    transform: translate(-50%,-50%);
+    font-family: 'Noto Nastaliq Urdu', sans-serif ;
+  }
+  
+  .slot {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background: rgba(75, 75, 75, 0.9);
+    border-radius: 5px;
+  }
+  
+  .slot:hover {
+    background-color: rgb(104, 104, 104);
+    cursor: pointer;
+  }
+  
+  slot:active {
+    background-color: rgb(70, 70, 70);
+    cursor: pointer;
+  }
+  
+  #slot1 {
+    margin-left: 30px;
+  }
+  
+  #slot9 {
+    margin-right: 30px;
+  }
+  
+  .backpackname {
+    font-family: 'Noto Serif Thai', serif;
+    text-align: center;
+    padding-top: 10px;
+    color: #eee;
+  }
+  
+
+.item_interact{
+    width: 10vh;
+    height: 7vh;
+    position: absolute;
+    top: 28%;
+    left: 17%;
+    background-color: rgb(51, 51, 51);
+    z-index: 5;
+    border-radius: 10px;
+    outline: 2px solid rgb(82, 82, 82);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+
+ .item_interact .interactbtn {
+    background: rgba(77, 77, 77, 0.1);
+    border: none;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 5px;
+    height: 40%;
+
+ }
+
+ .item_interact .interactbtn:hover {
+    background-color: rgb(104, 104, 104);
+    cursor: pointer;
+  }
+  
+  .item_interact .interactbtn:active {
+    background-color: rgb(70, 70, 70);
+    cursor: pointer;
+  }
+  .interacttext {
+    color: #eee;
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 1rem;
+  }
