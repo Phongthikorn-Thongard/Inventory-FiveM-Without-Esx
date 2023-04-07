@@ -1,6 +1,8 @@
 -- Declare variables
 local display = false
 
+print("ready")
+
 -- Main loop
 Citizen.CreateThread(function()
     while true do
@@ -17,6 +19,7 @@ Citizen.CreateThread(function()
         end
     end
 end)
+
 
 -- Register callback for 'close' event
 RegisterNUICallback('close', function(data, cb)
@@ -56,3 +59,9 @@ function closeInventory()
     })
     display = false
 end
+
+
+RegisterNetEvent("up:playerlog")
+AddEventHandler("up:playerlog", function(log) 
+    print(log)
+end)
