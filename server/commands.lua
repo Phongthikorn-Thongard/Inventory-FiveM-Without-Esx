@@ -103,6 +103,7 @@ RegisterCommand("removeitem", function(playerSrc, args)
     end
 end)
 
+<<<<<<< HEAD
 RegisterCommand("getallitem", function(playerSrc, args)
     MySQL.Async.fetchAll('SELECT id, name, weight FROM items', {}, function(rows)
         local items = {{"ID","Name","Weight"}}
@@ -113,3 +114,5 @@ RegisterCommand("getallitem", function(playerSrc, args)
         UP.PrintTable(items)
     end)
 end)
+=======
+>>>>>>> bfdd52121ff0b8a6164ae552e01c0da67177f494
