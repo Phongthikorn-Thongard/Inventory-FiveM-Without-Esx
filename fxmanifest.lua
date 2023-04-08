@@ -6,13 +6,16 @@ description 'Inventory created for Utopia'
 version '1.0.0'
 
 client_script {
-    'client/main.lua'
+    'client/main.lua',
+    'client/function.lua',
+    'common/function.lua'
 }
 
 server_scripts {
     '@mysql-async/lib/MySQL.lua',
-    'server/main.lua',
     'server/common.lua',
+    'common/function.lua',
+    'server/main.lua',
     'server/function.lua',
     'server/classes/player.lua',
     'server/commands.lua'

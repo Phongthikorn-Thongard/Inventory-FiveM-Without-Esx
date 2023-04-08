@@ -65,3 +65,9 @@ RegisterNetEvent("up:playerlog")
 AddEventHandler("up:playerlog", function(log) 
     print(log)
 end)
+
+
+RegisterNetEvent("up:player_tablelog")
+AddEventHandler("up:player_tablelog", function(items) 
+    UP.PrintTable(items)
+end)
