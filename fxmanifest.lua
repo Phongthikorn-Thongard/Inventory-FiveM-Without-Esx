@@ -8,11 +8,13 @@ version '1.0.0'
 client_script {
     'client/main.lua',
     'client/function.lua',
+    'client/commands.lua',
     'common/function.lua'
 }
 
 server_scripts {
     '@mysql-async/lib/MySQL.lua',
+    'server/async.lua',
     'server/common.lua',
     'common/function.lua',
     'server/main.lua',

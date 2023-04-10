@@ -35,3 +35,24 @@ UP.PrintTable = function(tbl)
     print(rowSeparator)
 
 end
+
+UP.GetItemIdByName = function(name)
+    for _, item in pairs(UP.Items) do
+        if item.name == name then
+            return item.id
+        end
+    end
+    print("item not found")
+    return nil
+end
+
+UP.GetItemNameById = function(id)
+    for _, item in pairs(UP.Items) do
+        print(item.id,id)
+        if item.id == id then
+            return item.name
+        end
+    end
+    print("item not found")
+    return nil
+end
